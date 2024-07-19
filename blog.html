@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Recursos de Salud</title>
+    <link rel="stylesheet" href="blog.css">
+    <script src="blog.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Blog de Recursos de Salud</h1>
+    </header>
+    <main>
+        <section class="add-post">
+            <h2>Agregar Nuevo Recurso</h2>
+            <form id="postForm">
+                <input type="text" id="title" placeholder="Título" required>
+                <textarea id="content" placeholder="Contenido" required></textarea>
+                <input type="url" id="image" placeholder="URL de la imagen (opcional)">
+                <button type="submit">Agregar Recurso</button>
+            </form>
+        </section>
+        <section class="posts" id="posts">
+            <h2>Recursos de Salud</h2>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blog de Recursos de Salud</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
