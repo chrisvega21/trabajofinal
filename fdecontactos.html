@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formas de Contacto - Agenda Médica</title>
+
+    <link rel="stylesheet" href="css/menu.css">
+
+    <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/ferreteria-bob-el-constructor.appspot.com/o/logosantasolo.png?alt=media&token=ccd7f8b2-e88d-4376-a09f-adf2aa61c5fe">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            
-            background-size: cover;
             background-color: #005b96;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
+            min-height: 100vh;
+            background-size: cover;
         }
         .overlay {
             position: absolute;
@@ -22,16 +32,16 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #005b96; 
-            z-index: -1; 
+            background-color: rgba(0, 91, 150, 0.8); /* Fondo semi-transparente */
+            z-index: -1; /* Colocar por detrás del formulario */
         }
         .container {
             max-width: 400px;
-            background-color: hwb(207 65% 18%);
+            background-color: #f2f2f2; /* Color de fondo del formulario */
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            position: relative; 
+            position: relative; /* Para alinear correctamente el formulario */
         }
         h2 {
             text-align: center;
@@ -71,10 +81,82 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+
+        /* Estilos para el encabezado y menú */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #003366;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999; /* Asegura que esté por encima del contenido */
+        }
+
+        .header-1 {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+        }
+
+        .header-1 img {
+            width: 50px; /* Ajusta el tamaño según sea necesario */
+            margin-right: 10px;
+        }
+
+        .enlaces nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        .enlaces a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .enlaces a:hover {
+            background-color: #005b96;
+        }
+
+        .enlaces .fa-brands {
+            color: white;
+            font-size: 1.2em;
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
-    <div class="overlay"></div> 
+
+    <header>
+        <a href="index.html" class="header-1">
+            <div><img src="https://firebasestorage.googleapis.com/v0/b/ferreteria-bob-el-constructor.appspot.com/o/logosantasolo.png?alt=media&token=ccd7f8b2-e88d-4376-a09f-adf2aa61c5fe" alt=""></div>
+            <h1>Clínica Santa Fe</h1>
+        </a>
+
+        <div class="enlaces">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="Sedes.html">Sedes</a>
+                <a href="especialidades.html">Especialidades</a>
+                <a href="fdecontactos.html">Contacto</a>
+                <a href="medicos.html">Staff Medico</a>
+            </nav>
+            <nav>
+                <a href="https://www.facebook.com/ClinicaSantaFeCostaRica/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/clinicasantafecr/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/51942890155"><i class="fa-brands fa-whatsapp"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="overlay"></div> <!-- Capa semi-transparente -->
     <div class="container">
         <h2>Formas de Contacto - Agenda Médica</h2>
         <form action="submit_form.php" method="post">
@@ -94,14 +176,5 @@
         </form>
     </div>
 </body>
-<footer>
-        <p>© 2024 Clínica Santa Fe. Todos los derechos reservados.</p>
-	<p>Integrantes:</p>
-	<p>Jhon Dennis Quispe Godoy</p>
-	<p>Jhon David Rosas Paredes</p>
-	<p>Christopher Benjamin Vega Yanac</p>
-	
-</footer>
 </html>
-
 
