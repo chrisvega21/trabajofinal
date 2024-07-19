@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedes de la Clínica Médica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #005b96; /* Color de fondo */
+            font-size: 18px;
+            color: #333; /* Color de texto principal */
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: hsl(0, 0%, 100%); /* Azul */
+            margin-bottom: 20px;
+        }
+        .sedes-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .sede {
+            width: 45%;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            transition: transform 0.3s ease;
+        }
+        .sede:hover {
+            transform: translateY(-5px); /* Efecto de levantar en hover */
+        }
+        .sede h2 {
+            margin-top: 0;
+            color: #007BFF; /* Azul */
+        }
+        .sede p {
+            margin-bottom: 5px;
+            color: #666; /* Gris oscuro */
+        }
+        .contenido-sede {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .imagen {
+            flex: 150px;
+            margin-left: 20px;
+        }
+        .imagen img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .sede {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>SEDES SANTA FE</h1>
+
+    <div class="sedes-container">
+        <div class="sede">
+            <div class="contenido-sede">
+                <h2>Sede Central</h2>
+                <p>Dirección: Calle Principal 123, Ciudad Principal</p>
+                <p>Teléfono: (123) 456-7890</p>
+                <p>Horario: Lunes a Viernes de 8am a 6pm</p>
+            </div>
+            <div class="imagen">
+                <img src="img/sede 1.jpeg" alt="Imagen Sede Central">
+            </div>
+        </div>
+
+        <div class="sede">
+            <div class="contenido-sede">
+                <h2>Sucursal Norte</h2>
+                <p>Dirección: Avenida Norte 456, Ciudad Principal</p>
+                <p>Teléfono: (234) 567-8901</p>
+                <p>Horario: Lunes a Viernes de 9am a 7pm</p>
+            </div>
+            <div class="imagen">
+                <img src="img/sede 2.jpeg" alt="Imagen Sucursal Norte">
+            </div>
+        </div>
+
+        <div class="sede">
+            <div class="contenido-sede">
+                <h2>Sucursal Sur</h2>
+                <p>Dirección: Calle Sur 789, Ciudad Principal</p>
+                <p>Teléfono: (345) 678-9012</p>
+                <p>Horario: Lunes a Viernes de 10am a 8pm</p>
+            </div>
+            <div class="imagen">
+                <img src="img/sede 3.jpeg" alt="Imagen Sucursal Sur">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
