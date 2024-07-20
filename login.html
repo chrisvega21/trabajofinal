@@ -12,51 +12,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-	<style>
-		.footer {
-			background-color: #1f3b52; /* Color marino */
-                        color: #ffffff; /* Letras blancas */
-                        padding: 20px 0;
-                        text-align: center;
-		}
-		.footer .container {
-                        display: flex;
-                        justify-content: space-around;
-                        flex-wrap: wrap;
-                        max-width: 1000px;
-                        margin: 0 auto;
-                }
-		.footer .column {
-                        flex: 1;
-                        margin: 10px;
-                        min-width: 200px;
-                }
-		.footer .links {
-                        list-style-type: none;
-                        padding: 0;
-                }
-                .footer .links a {
-                        color: #ffffff;
-                        text-decoration: none;
-                }
-                .footer .links a:hover {
-                        text-decoration: underline;
-                }
-                .footer p {
-                        margin: 5px 0;
-                        font-size: 14px;
-                }
-	</style>
+    <style>
+        body {
+            background-color: #1f3b52; /* Fondo principal color marino */
+            color: #ffffff; /* Texto principal blanco */
+            font-family: 'Montserrat', sans-serif; /* Fuente principal */
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer {
+            background-color: #0f273a; /* Color marino más oscuro */
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px; /* Ajuste el ancho máximo según sea necesario */
+            margin: 0 auto;
+        }
+
+        .footer .column {
+            flex: 1;
+            margin: 10px;
+            min-width: 200px;
+        }
+
+        .footer .links {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer .links a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .footer .links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+    </style>
 
     <title>Sistema de Inicio</title>
 </head>
 <body>
-
-
-
-
-
-    
     <h1>Sistema de Inicio</h1>
     <form action="">
         <table class="login-table">
@@ -81,7 +89,6 @@
             <tr>
                 <td class="botoncito">
                     <button type="button" onclick="ingresar();">Ingresar</button>
-
                     <button type="button" onclick="salir();">Salir</button>
                     <br><br><br>
                 </td>
@@ -92,15 +99,17 @@
 <br>
 <br>
 <br>
+<br>
+<br>
 </body>
-	<footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="column">
                 <ul class="links">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="Sedes.html">Sedes</a></li>
                     <li><a href="especialidades.html">Especialidades</a></li>
-                    <li><a href="medicos.html">Medicos</a></li>
+                    <li><a href="medicos.html">Médicos</a></li>
                 </ul>
             </div>
             <div class="column">
@@ -122,4 +131,5 @@
         </div>
         <p>&copy; 2024 Clínica Santa Fé. Todos los derechos reservados.</p>
     </footer>
+</body>
 </html>
